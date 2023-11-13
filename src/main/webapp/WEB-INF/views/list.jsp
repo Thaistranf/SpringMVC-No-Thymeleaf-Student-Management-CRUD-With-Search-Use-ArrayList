@@ -82,7 +82,8 @@
                 <td>${students.phone}</td>
                 <td>${students.classroom}</td>
                 <td><button class="btn btn-warning"><a href="${pageContext.request.contextPath}/students/update/${students.id}">Edit</a></button></td>
-                <td><button class="btn btn-danger"><a href="${pageContext.request.contextPath}/students/delete/${students.id}">Delete</a></button></td>
+                <td><button class="btn btn-danger"><a href="${pageContext.request.contextPath}/students/delete/${students.id}" onclick="return confirm('Are you sure ?')">Delete</a></button></td>
+
             </tr>
         </c:forEach>
     </tbody>
