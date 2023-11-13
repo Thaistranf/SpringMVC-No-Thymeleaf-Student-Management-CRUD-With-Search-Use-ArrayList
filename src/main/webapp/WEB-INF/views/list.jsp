@@ -88,8 +88,9 @@
     </tbody>
 </table>
 <hr>
-<%--<h2>List of students to search for</h2>--%>
+
 <c:if test="${not empty students}">
+    <h2>List of students to search for</h2>
     <table class="table table-striped">
         <thead>
         <tr>
